@@ -1,0 +1,42 @@
+# Local assistant/runtime directories
+/.agents/
+/.aws/
+/.codex/
+/.local-reference/
+
+# Third-party reference copies stay on disk, outside public Git history.
+/datasheets/**/*.pdf
+/DCJ11SBC-V1-3-2.zip
+/audit/
+
+# GAL build outputs
+/logic/gal/build/
+
+# KiCad per-user state, locks, automatic history and recovery files
+*.kicad_prl
+*.lck
+.history/
+*-backups/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+_autosave-*
+
+# Temporary autorouter exchange files
+/kicad/rig/temp-freerouting.*
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Desktop metadata
+.DS_Store
+Thumbs.db
+
+# Local audit tools, reports and design backups
+/mechanical/zif/backups/
+/mechanical/zif/*verification.json
+/mechanical/zif/longpads-board-check.json
+/mechanical/zif/dip24-fit-check.svg
+/mechanical/zif/preview-3d.png
+/datasheets/ECS_HC49U.source.txt
+/datasheets/DEC_J11_Data_Chip_Specification_Jul1982.source.txt

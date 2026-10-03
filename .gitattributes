@@ -1,0 +1,10 @@
+# Keep reference documents and rendered previews as binary files.
+*.pdf binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Preserve exact line endings in programming files and their checksums.
+*.jed -text
+*.JED -text

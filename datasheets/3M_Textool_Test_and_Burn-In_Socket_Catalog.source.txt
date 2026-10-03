@@ -1,0 +1,7 @@
+Manufacturer: 3M
+Document: Textool Test and Burn-In Socket Catalog.
+Source: https://multimedia.3m.com/mws/media/351660O/3m-tm-textool-tm-test-and-burn-in-socket-catalog.pdf
+Local PDF: 3M_Textool_Test_and_Burn-In_Socket_Catalog.pdf
+
+Printed page 16 lists the 264-4493 socket.
+Printed page 1 gives the installation instructions: solder with contacts open.

@@ -1,0 +1,9 @@
+Publisher: Texas Instruments.
+Title: SNx4AHCT14 Hex Schmitt-Trigger Inverters.
+Document: SCLS246T, October 2023; 42 pages.
+Source: https://www.ti.com/lit/ds/symlink/sn74ahct14.pdf
+Local PDF: TI_SN74AHCT14.pdf
+
+U3 is SN74AHCT14N in a 14-pin DIP package.
+The project symbol adapts KiCad's 74HC14 drawing for this part.
+See THIRD_PARTY.md for the KiCad library license.

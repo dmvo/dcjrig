@@ -1,0 +1,8 @@
+Publisher: Elecsound Technology Company Limited.
+Title: Quartz Crystal Resonator, HC49S — SMD / DIP.
+Source: https://www.elecsound.com/pdf/HC49S_Quartz_Crystal_Resonator.pdf
+Local PDF: Elecsound_HC49S_Quartz_Crystal_Resonator.pdf
+
+Use the DIP drawing for the footprint: body up to 11.40 × 4.80 × 3.5 mm,
+lead spacing 4.88 ± 0.2 mm, lead diameter 0.43 ± 0.02 mm.
+This is a package-size reference. The stocked 4 MHz crystal's maker is unknown.

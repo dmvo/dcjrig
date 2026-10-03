@@ -1,0 +1,11 @@
+Publisher: Digital Equipment Corporation.
+Document: Digital Semiconductor Databook, Volume 1, 1987, Appendix E.
+Source: https://bitsavers.trailing-edge.com/pdf/dec/semiconductor/1987_Digital_Semiconductor_Databook_Vol_1.pdf
+Local PDF: DEC_DCJ11_Mechanical_Dimensions_1987_E4.pdf
+
+The local file is source PDF page 976, printed E-4. Use figure E.4 for DCJ11.
+The page is marked Preliminary.
+
+DCJ11 has 60 pins on a 0.100-inch pitch. The row spacing is 1.300 inches
+(33.02 mm). Its nominal ceramic body is 3.000 × 1.288 inches.
+Maximum body thickness: 0.211 inches.

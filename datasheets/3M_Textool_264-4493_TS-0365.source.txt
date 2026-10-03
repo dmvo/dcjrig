@@ -1,0 +1,16 @@
+Manufacturer: 3M Japan Limited
+Document: 3U-0010-0999-3, revision E, 2020-05-20; linked by 3M as TS0365.
+Title: TEXTOOL ZIF type DIP Test Socket II, 2XX-XXXX-00-0602J.
+Source: https://multimedia.3m.com/mws/media/494546O/3m-tm-dip-sockets-100-2-54-mm-ts0365.pdf?fn=ts0365.pdf
+Manufacturer page: https://www.3mindia.in/3M/en_IN/p/d/b00035247/
+Local PDF: 3M_Textool_264-4493_TS-0365.pdf
+
+Use the 264-4493-00-0602J row: 64 contacts on a 2.54 mm pitch.
+Row spacing: 22.86 mm. Minimum PCB hole diameter: 1.0 mm.
+Contact tails: 0.76 × 0.30 mm, 2.8 mm long.
+Last tail to the lever-end body edge: 12.8 mm for the 64-contact part.
+Body: 100.6 × 33.0 mm, 11.9 mm high.
+The closed lever extends 12.2 mm beyond the body.
+
+The rig's sockets are marked TEXTOOL 264 4493. Their full suffix is unknown.
+Check their fit against the template. Fine details of the 3D model are approximate.

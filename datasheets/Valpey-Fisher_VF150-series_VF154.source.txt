@@ -1,0 +1,7 @@
+Manufacturer: Valpey-Fisher.
+Document: VF150 Series TTL Hybrid Crystal Clock Oscillators; two pages.
+Source: https://www.quartz1.com/price/techdata/VF152.pdf
+Local PDF: Valpey-Fisher_VF150-series_VF154.pdf
+
+The selection table on page 2 includes VF154.
+The rig uses a 614.4 kHz VF154 as Y2. Pin 1 is not connected.

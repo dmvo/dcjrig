@@ -1,0 +1,9 @@
+Manufacturer: 3M
+Document: TS-1099-B, 4800 series stamped dual-wipe DIP sockets.
+Source: https://multimedia.3m.com/mws/media/218496O/3m-tm-dip-socket-4800-series-ts1099.pdf
+Local PDF: 3M_DIP_Socket_4800_TS1099.pdf
+
+The 4824-3000-CP is an example of a low DIP24 socket.
+Its nominal height is 5.08 mm, with a 0.127 mm general tolerance.
+Add the 74F821 body height of up to 5.08 mm: the total is 10.287 mm.
+This is an example for the height calculation. Measure the sockets you use.

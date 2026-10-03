@@ -1,0 +1,7 @@
+Publisher: Digital Equipment Corporation.
+Document: Digital Semiconductor Databook, Volume 1, 1987; DCJ11 chapter.
+Source: https://bitsavers.trailing-edge.com/pdf/dec/semiconductor/1987_Digital_Semiconductor_Databook_Vol_1.pdf
+Local PDF: DEC_DCJ11_1987_Databook.pdf
+
+The local file contains source PDF pages 261–334 (printed 1-249 through 1-322).
+Read it with DEC_Semiconductor_Databook_Vol1_1987_Errata.pdf.

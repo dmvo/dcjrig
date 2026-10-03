@@ -1,0 +1,8 @@
+Publisher: Digital Equipment Corporation.
+Document: EK-DCJ11-UG-PRE, DCJ11 Microprocessor User's Guide.
+Edition: October 1983, preliminary.
+Source: https://dusted.dk/pages/computers/J-11/datasheet-DEC-DCJ11_Microprocessor_Users_Guide_OCR.pdf
+Local PDF: DEC_DCJ11_Users_Guide_Oct1983.pdf
+
+Covers the bus, startup, ODT and processor control signals.
+Use the production databook and its errata for electrical limits.

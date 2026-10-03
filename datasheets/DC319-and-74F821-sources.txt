@@ -1,0 +1,22 @@
+DEC DC319-AA
+
+Publisher: Digital Equipment Corporation.
+Title: DC319-AA DL11 Compatible Asynchronous Receiver/Transmitter.
+Local PDF: DEC_DC319-AA.pdf
+Databook: https://bitsavers.trailing-edge.com/pdf/dec/semiconductor/1987_Digital_Semiconductor_Databook_Vol_1.pdf
+Errata: https://bitsavers.org/pdf/dec/semiconductor/1987_Digital_Semiconductor_Databook_Vol_1_Errata.pdf
+
+The local file contains databook PDF pages 533–547 (printed 3-27 through 3-41).
+Its final page is errata PDF page 54, the corrected printed page 3-27.
+In the schematic, the DC319 is U2.
+
+National 74F821SPC
+
+Publisher: National Semiconductor; the archived copy has a TI cover.
+Title: 54F/74F821 10-Bit D-Type Flip-Flop.
+Document: TL/F/9595, December 1994; TI number SNOS215A.
+Source: https://www.elektronikjk.com/elementy_czynne/IC/54F821.pdf
+Local PDF: National_74F821SPC.pdf
+
+The complete 10-page file lists 74F821SPC in its ordering table.
+In the schematic, this part is U4. Use the SP/N24C package drawing.

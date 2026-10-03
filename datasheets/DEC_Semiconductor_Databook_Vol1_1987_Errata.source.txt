@@ -1,0 +1,7 @@
+Publisher: Digital Equipment Corporation.
+Document: Digital Semiconductor Databook, Volume 1, 1987, Errata.
+Source: https://bitsavers.trailing-edge.com/pdf/dec/semiconductor/1987_Digital_Semiconductor_Databook_Vol_1_Errata.pdf
+Local PDF: DEC_Semiconductor_Databook_Vol1_1987_Errata.pdf
+
+Includes corrected DCJ11 electrical and timing tables.
+Use these corrections when reading the databook.

@@ -1,0 +1,8 @@
+Publisher: Texas Instruments.
+Title: SNx4AHCT541 Octal Buffers/Drivers With 3-State Outputs.
+Document: SCLS269Q, August 2024; 39 pages.
+Source: https://www.ti.com/lit/ds/symlink/sn74ahct541.pdf
+Local PDF: TI_SN74AHCT541.pdf
+
+U5 uses SN74AHCT541N in a 20-pin DIP package.
+The schematic symbol is 74xx:74AHCT541.

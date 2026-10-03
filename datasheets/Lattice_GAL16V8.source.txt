@@ -1,0 +1,8 @@
+Publisher: Lattice Semiconductor Corporation.
+Title: GAL16V8 High Performance E2CMOS PLD, Generic Array Logic.
+Revision: May 2001, 16v8_08; 23 pages.
+Source: https://www.silicon-ark.co.uk/datasheets/gal16v8-datasheet-lattice.pdf
+Local PDF: Lattice_GAL16V8.pdf
+
+U6 uses KiCad's Logic_Programmable:GAL16V8 symbol.
+Check the actual chip's model and speed grade when programming it or calculating delays.

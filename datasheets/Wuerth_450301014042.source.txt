@@ -1,0 +1,6 @@
+Manufacturer: Wuerth Elektronik.
+Part: 450301014042, WS-SLTV mini slide switch.
+Source: https://www.we-online.com/components/products/datasheet/450301014042.pdf
+Local PDF: Wuerth_450301014042.pdf
+
+Used for power switch SW2.

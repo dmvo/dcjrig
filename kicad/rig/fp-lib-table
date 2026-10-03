@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DCJRig")(type "KiCad")(uri "${KIPRJMOD}/DCJRig.pretty")(options "")(descr "Project footprints for the DCJ11 test rig"))
+)

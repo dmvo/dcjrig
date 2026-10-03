@@ -1,0 +1,37 @@
+GAL16V8
+ODTBRDGE
+
+; SPDX-License-Identifier: MIT
+; Copyright (c) 2026 Dimitri Varpusvuori
+; U6: DCJ11 bus controls for the DC319A DLART and startup buffer.
+; Pin names starting with n describe active-low signals at the package.
+; NOT TESTED ON REAL HARDWARE. See design.md for verification limits.
+
+AIO3 AIO2 AIO1 AIO0 BS0 BS1 nSCTL nBUF ADDR0 GND
+NC   nREAD PARK13 PARK14 nWRITE PARK16 PARK17 nSELECT nBOOT VCC
+
+; The DLART occupies the external-I/O bank. A2:A0 select its registers.
+/nSELECT = BS1 * /BS0
+
+; Bus reads use AIO codes 8 through C. Drive data only while the CPU
+; releases DAL. The DLART's chip-select input also qualifies this strobe.
+/nREAD = /nBUF * AIO3 * /AIO2
+        + /nBUF * AIO3 * /AIO1 * /AIO0
+
+; Word and byte writes use codes 0 through 3. The DLART accepts its
+; writable low byte at even addresses during the stretched phase.
+/nWRITE = /AIO3 * /AIO2 * /ADDR0 * /nSCTL
+
+; GP read (code E) selects the fixed startup word. U5 also checks nBUF.
+/nBOOT = AIO3 * AIO2 * AIO1 * /AIO0
+
+; Unconnected output pads have a defined state.
+PARK13 = GND
+PARK14 = GND
+PARK16 = GND
+PARK17 = GND
+
+DESCRIPTION
+ODT bridge for the DCJ11 test rig. See design.md for the specification
+and proof. This source and the programming data it produces use the
+MIT license in LICENSE.

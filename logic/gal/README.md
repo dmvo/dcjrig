@@ -1,12 +1,10 @@
 # ODT bridge
 
-The Lattice **GAL20V8A-15LP** at U6 connects the DCJ11 bus to the DC319A DLART and the
-startup buffer. This directory contains everything needed to build and
-program it, under the [MIT license](LICENSE).
+U6, a Lattice **GAL20V8A-15LP**, connects the DCJ11 bus to the DC319A DLART
+and startup buffer. The source and build files use the [MIT license](LICENSE).
 
-**The logic has not been tested on real hardware.** The checks below prove
-its Boolean behavior and check the programming file. They do not test
-electrical timing or a working board.
+**The logic has not been tested on hardware.** The checks below verify
+Boolean behavior and the programming file. They do not test electrical timing.
 
 - [odt_bridge.pld](odt_bridge.pld) — equations and pin assignments.
 - [odt_bridge.jed](odt_bridge.jed) — programming file, built with galette 0.3.0.
@@ -14,10 +12,9 @@ electrical timing or a working board.
 - [check_bridge.py](check_bridge.py) — independent source and fuse checks.
 - [prove_minimal.py](prove_minimal.py) — exact minimum-cover check.
 
-The logic uses four working equations: five product terms and 17 literals.
-This is the proven minimum for the specified full truth table in one GAL
-stage. Four constant assignments hold unused outputs LOW without adding
-effective product terms. There are no registers or feedback paths.
+Four working equations use five product terms and 17 literals: the proven
+minimum for the full truth table in one GAL stage. Four constant assignments
+hold unused outputs LOW. There are no registers or feedback paths.
 
 ## Build on Linux
 
@@ -35,11 +32,10 @@ From the project root, run:
 make -C logic/gal
 ```
 
-This needs KiCad 10. It rebuilds `build/odt_bridge.jed`, verifies it, and
-compares it byte for byte with the supplied file. It exports a fresh netlist
-to check the pin connections. It does not run ERC or change the schematic.
-The logic check covers 16384 input combinations, including all levels of
-the five grounded inputs, and proves the minimum term count.
+This needs KiCad 10. It rebuilds `build/odt_bridge.jed`, checks it, and
+compares it byte for byte with the supplied file. A fresh netlist checks
+the schematic connections; ERC is not run. The logic check covers 16384
+input combinations, varies the five grounded inputs, and proves the minimum.
 
 Use `make -C logic/gal check` for the same logic checks without KiCad.
 
@@ -53,10 +49,9 @@ project root with the **GAL20V8A-15LP** in the programmer:
 minipro -p GAL20V8A -w logic/gal/odt_bridge.jed
 ```
 
-Minipro verifies after writing. Check that both steps succeed before
-fitting U6. Programming verification does not mean the logic has been
-tested in the rig.
+Minipro verifies after writing. Both steps must succeed before fitting U6.
+This verifies programming, not operation in the rig.
 
-DEC calls the serial chip a **DLART**: a DL11-compatible asynchronous
-receiver/transmitter. The [DEC document](../../datasheets/DC319-and-74F821-sources.txt)
-uses the full part name DC319-AA, on printed page 3-27.
+DEC calls this chip a **DLART**, a DL11-compatible asynchronous
+receiver/transmitter. See DC319-AA, printed page 3-27, in the
+[DEC document](../../datasheets/DC319-and-74F821-sources.txt).

@@ -2,43 +2,40 @@
 
 ## What the board does
 
-The rig lets a DEC DCJ11-AE processor talk to a serial terminal through its
-built-in ODT console. This gives you a quick way to check whether the CPU
+The rig uses the DCJ11-AE's built-in ODT console to check that the CPU
 starts and responds. It does not test every CPU function.
 
 | Part | Job |
 |---|---|
 | U1 — DCJ11-AE | Processor under test |
 | U2 — DC319A DLART | Serial interface |
-| U3 — SN74AHCT14N | Reset, address-latch clock and late data capture |
+| U3 — SN74AHCT14N | Reset, latch clock and late data capture |
 | U4 — 74F821SPC | Holds address and control bits during a bus cycle |
-| U5 — 74AHCT541 | Supplies the startup settings for ODT |
+| U5 — SN74AHCT541N | Supplies the startup settings for ODT |
 | U6 — GAL20V8A-15LP | Selects the UART and controls bus transfers |
 | Y1 — 4 MHz HC-49S crystal | CPU clock |
 | Y2 — VF154, 614.4 kHz | UART clock |
 
-The board is 160 × 100 mm, with four copper layers and a 1.6 mm thickness.
-The outer layers carry signals. The inner layers carry ground and 5 V.
+## PCB files and KiCad
 
-## Open the design
+The [JLCPCB package](../dcjrig-jlcpcb-3ac8660.zip) contains Gerbers and drill
+files. Order **4-layer FR-4, 160 × 100 mm, 1.6 mm, 1 oz copper on all layers**.
+Layer order: front signals, 5 V, ground, back signals.
 
 Open `kicad/rig/rig.kicad_pro` in KiCad 10. The project includes its custom
 symbols, footprints and 3D models. Install KiCad's standard libraries too.
 
-The picture in the main README is a render of this board in KiCad. Some
-library models show empty IC sockets, and the slide switch has no model.
-Run `bash docs/render.sh` to make the picture again.
+Run `bash docs/render.sh` to recreate the README picture. Some models show
+empty IC sockets; the slide switch has no model.
 
 ## Fit the processor
 
-The two Textool 264-4493 sockets hold the CPU in their **inner rows**.
-Use the middle 30 contacts of each row. Leave one contact empty at each end.
-Follow the board's pin 1 mark. Turn power off before inserting or removing
-the processor.
+Turn power off before inserting or removing the CPU. Follow the board's
+pin 1 mark. Use the middle 30 contacts in each **inner row** of the Textool
+264-4493 sockets, leaving one contact empty at each end.
 
-Parts under the CPU must be **no more than 11 mm above the PCB**. Include
-sockets and any gap below the component in that measurement. Check the
-assembled height of U4 and U5 before inserting the CPU.
+Parts under the CPU must be **no more than 11 mm above the PCB**, including
+sockets and gaps. Measure the assembled height of U4 and U5.
 
 The [socket guide](../mechanical/zif/README.md) has dimensions, a printable
 template and a height checker. The [crystal guide](../mechanical/crystal_hc49s/README.md)
@@ -66,17 +63,17 @@ The startup settings are wired for ODT entry.
 
 ## GAL programming
 
-U6 needs a programmed GAL. The [GAL guide](../logic/gal/README.md) includes
-the source, a programming file and instructions for galette and minipro
-on Linux. The logic has not been tested on real hardware.
+Program U6 before fitting it. The [GAL guide](../logic/gal/README.md) includes
+the source, programming file and Linux instructions for galette and minipro.
 
 ## Before relying on a result
 
-The design has not yet been tested on a built board. First check the rig
-with a known-good CPU. A silent console alone is not enough to reject a CPU.
-A useful quick test includes both the ODT prompt and a response to a command.
+**The board and GAL logic have not been tested on hardware.** First check
+the rig with a known-good CPU. Look for the ODT prompt and a response to a
+command. A silent console alone is not enough to reject a CPU.
 
 The CPU's DV input receives an inverted /SCTL pulse for late data capture.
 The [timing notes](../logic/gal/design.md#timing-assumptions) give the
-calculated margins and their assumptions. Check the clock waveform and DV
-edge on the built board. The render cannot confirm real component heights.
+calculated margins and assumptions. Measure the clock and DV edge on the
+built board. Test point labels are on the back. The render cannot confirm
+real component heights.

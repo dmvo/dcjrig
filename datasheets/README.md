@@ -17,7 +17,6 @@ These source notes tell you where to find them.
 | Low DIP socket example | [3M 4800 series](3M_DIP_Socket_4800_TS1099.source.txt) |
 | Power switch | [Wuerth](Wuerth_450301014042.source.txt) |
 
-Save each PDF under the filename in its source note. KiCad uses these local
-paths for its datasheet links. Some DEC files contain selected pages; their
-notes give the page ranges. [SHA256SUMS.txt](SHA256SUMS.txt) identifies the
-exact local copies.
+Use the filenames in the notes for KiCad's datasheet links. DEC and Lattice
+extracts list source pages. [SHA256SUMS.txt](SHA256SUMS.txt) identifies our
+local files; re-exported extracts may have different hashes.

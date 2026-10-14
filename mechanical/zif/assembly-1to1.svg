@@ -327,8 +327,8 @@
 <rect x="14.9100" y="-40.4700" width="3.2" height="2.2" rx="1.1" fill="#68767a"/>
 <circle cx="16.51" cy="-39.37" r="0.7" fill="white"/>
 <text x="0" y="0" text-anchor="middle" font-size="4">DCJ11</text>
-<text x="0" y="6" text-anchor="middle" font-size="2.2">FREE WIDTH 21.88 mm</text>
-<text x="0" y="10" text-anchor="middle" font-size="2.2">HEIGHT MAX 11 mm</text>
+<text x="0" y="6" text-anchor="middle" font-size="2.2">21.88 mm gap</text>
+<text x="0" y="10" text-anchor="middle" font-size="2.2">11 mm max height</text>
 </g>
 <text x="20" y="193" font-size="3">128 plated holes, drill 1.4 mm; pads 3.2 x 2.2 mm; pitch 2.54 mm.</text>
 <text x="20" y="199" font-size="3">60 numbered pads = CPU pins. 68 blank pads = unused socket pins.</text>

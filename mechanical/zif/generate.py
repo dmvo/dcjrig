@@ -326,8 +326,8 @@ def svg():
             anchor='start' if x<0 else 'end'
             s.append(f'<text x="{tx}" y="{y+.5}" text-anchor="{anchor}" font-size="1.7">{n}</text>')
     s.append('<text x="0" y="0" text-anchor="middle" font-size="4">DCJ11</text>')
-    s.append('<text x="0" y="6" text-anchor="middle" font-size="2.2">FREE WIDTH 21.88 mm</text>')
-    s.append('<text x="0" y="10" text-anchor="middle" font-size="2.2">HEIGHT MAX 11 mm</text>')
+    s.append('<text x="0" y="6" text-anchor="middle" font-size="2.2">21.88 mm gap</text>')
+    s.append('<text x="0" y="10" text-anchor="middle" font-size="2.2">11 mm max height</text>')
     s.append('</g>')
     for i,t in enumerate([f'128 plated holes, drill {DRILL} mm; pads {PAD_X} x {PAD_Y} mm; pitch 2.54 mm.',
                            '60 numbered pads = CPU pins. 68 blank pads = unused socket pins.',

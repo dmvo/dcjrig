@@ -1,23 +1,23 @@
 # DCJ11 test rig
 
-![KiCad 3D render of the DCJ11 test rig](docs/images/dcjrig-board.png)
+![Current board rendered in KiCad, with a DCJ11 in two ZIF sockets](docs/images/dcjrig-board.png)
 
 **A small KiCad project designed from scratch with AI assistance.**
-The idea is to design without manual CAD work. The human gives instructions,
-AI does the work, and the human checks the result. This covers the circuit,
-custom parts, 3D models and documentation. For PCB routing, the human used
-an autorouter.
+The human gives instructions, AI does the work, and the human checks it.
+That covers the circuit, custom parts, 3D models and documentation.
+An autorouter lays the tracks.
 
-[AGENTS.md](AGENTS.md) holds the rules we use to work this way.
-You can copy it and adapt it for your own projects.
+[AGENTS.md](AGENTS.md) holds our working rules. Copy and adapt them for
+your own projects.
 
-The rig gives a DEC DCJ11 processor a serial console for a quick check.
+The rig uses a DEC DCJ11-AE's built-in ODT console for a quick CPU check.
 It uses a 4 MHz crystal, a DC319A DLART and two ZIF sockets.
 The [GAL source and programming file](logic/gal/README.md) are included.
 The board and GAL logic have not been tested on real hardware.
 
 [Open in KiCad 10](kicad/rig/rig.kicad_pro) ·
 [Build guide](docs/build.md) ·
+[PCB files](dcjrig-jlcpcb-3ac8660.zip) ·
 [Sources and credits](THIRD_PARTY.md)
 
 Inspired by Peter Schranz's

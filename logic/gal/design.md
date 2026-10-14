@@ -1,12 +1,11 @@
 # ODT bridge: design and minimum logic
 
-**This logic has not been tested on real hardware.** This proof covers
-steady Boolean levels. Propagation delays, startup transients and bus
-timing still need checking on a built board.
+**This logic has not been tested on hardware.** The proof covers steady
+Boolean levels. Delays, startup transients and bus timing need measurements.
 
 U6 is a Lattice GAL20V8A-15LP in simple combinatorial mode.
-The equations are written from this board's connections and the device
-specifications below. Signal names beginning with `n` mean active LOW.
+The equations follow the wiring and specifications below. Names beginning
+with `n` mean active LOW.
 `AIO3:0`, `BS1:0` and `ADDR0` come from U4 and remain stable during a
 transfer. `nBUF` and `nSCTL` come directly from the CPU.
 
@@ -23,6 +22,10 @@ transfer. `nBUF` and `nSCTL` come directly from the CPU.
 - Lattice GAL20V8A/B, May 1992: simple mode and fuse layout, printed
   pages 2-32–33; commercial A timing, page 2-37; input buffers, page 2-44.
   [Source notes](../../datasheets/Lattice_GAL20V8A_B_1992.source.txt).
+- Timing also uses DEC's [corrected tables](../../datasheets/DEC_Semiconductor_Databook_Vol1_1987_Errata.source.txt),
+  National's [74F821](../../datasheets/DC319-and-74F821-sources.txt), and TI's
+  [AHCT14](../../datasheets/TI_SN74AHCT14.source.txt) and
+  [AHCT541](../../datasheets/TI_SN74AHCT541.source.txt) switching limits.
 
 ## Pin assignments
 
@@ -96,10 +99,9 @@ Distributing the read expression gives the two product terms in the
 source. The other expressions each need one. These cover every input
 combination; no undefined cases are used to simplify the equations.
 
-The read and write code sets are disjoint. GP read is also outside both
-sets. Therefore read and write cannot overlap, and the DLART and startup
-buffer cannot drive the bus together at steady inputs. Both read paths
-require `u = 0`, so neither is enabled while the CPU drives DAL.
+Read, write and GP-read codes do not overlap. With steady inputs, read and
+write cannot coincide, nor can the DLART and startup buffer drive together.
+Both read paths require `u = 0`, when the CPU releases DAL.
 
 ## Check the programming file
 
@@ -123,8 +125,7 @@ The checker rejects feedback, checks both JEDEC checksums, and verifies
 the source pin order. `make check-wiring` also checks the saved schematic's
 control connections, grounded inputs and DV inverter path.
 
-These checks establish the specified Boolean behavior of the equations
-and programming data. They do not establish that the complete rig works.
+These checks prove the specified Boolean behavior, not that the rig works.
 
 ## What "minimum" means
 
@@ -134,8 +135,8 @@ product terms; among equal term counts, minimize literals. A literal is
 one input used either directly or inverted. Both output polarities are
 available at no extra term cost.
 
-This is the minimum for that contract and implementation style. It does
-not claim a minimum over arbitrary board rewiring or ignored input states.
+The minimum applies to these constraints. Changing the wiring or ignoring
+input states is outside the proof.
 
 | Output | Minimum terms | Literals at that minimum | Opposite polarity: terms / literals |
 |---|---:|---:|---:|
@@ -145,9 +146,8 @@ not claim a minimum over arbitrary board rewiring or ignored input states.
 | nBOOT | 1 | 4 | 4 / 4 |
 | **Total** | **5** | **17** | |
 
-Four distinct, nonconstant output functions require four output equations.
-The four constant output assignments prevent floating pads. They consume
-zero effective product terms and no input literals.
+Four different nonconstant outputs need four equations. The other four
+outputs are held LOW, using zero effective terms and no literals.
 
 The read function has five asserted cases over its essential inputs. A
 single product covers a power-of-two number of cases, so one cannot cover
@@ -166,10 +166,9 @@ Each output has its own eight product rows, so rows cannot be shared.
 The sum of the four individual minima is therefore the overall minimum
 within the stated implementation style.
 
-No instructions execute in a GAL. These outputs respond in parallel.
-For the stocked -15 part, the specified input-to-output delay is at most
-15 ns under the manufacturer's conditions. Fewer terms do not establish
-a faster guaranteed delay.
+All outputs respond in parallel. The -15 part's input-to-output delay is
+at most 15 ns under Lattice's stated conditions. Fewer terms do not guarantee
+a shorter delay.
 
 ## Timing assumptions
 

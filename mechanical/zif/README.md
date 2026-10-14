@@ -1,7 +1,6 @@
 # Two ZIF sockets for one DCJ11
 
-U1 uses two Textool 264-4493 sockets. Each has 64 contacts and a lever that
-lets you insert the processor without forcing its pins.
+U1 uses two 64-contact Textool 264-4493 ZIF sockets.
 The footprint is `DCJRig:DCJ11_DIP60_2xTextool_264-4493_ZIF`.
 
 ## Insert the CPU
@@ -10,9 +9,9 @@ Use the **two inner rows**, which are 33.02 mm apart. The CPU takes the
 middle 30 contacts in each row. Leave **one empty contact at both ends**.
 The outer rows stay unused.
 
-The sockets face opposite ways. In the footprint's own orientation, one
-lever is at the upper left and the other at the lower right. On the board,
-follow the square pad and pin 1 mark. Turn power off before changing CPUs.
+The sockets face opposite ways: the template shows one lever at the upper
+left, the other at the lower right. Follow the board's square pad and pin 1
+mark. Turn power off before changing CPUs.
 
 ## Dimensions
 
@@ -46,24 +45,23 @@ Print it at 100% and check its 50 mm scale with a ruler.
 
 ## Use the space under the CPU
 
-Each socket has its own placement outline, called a courtyard in KiCad.
-The gap between them is available for components.
+Each socket has its own KiCad courtyard. Components can occupy the gap.
 
-Keep the complete mounted height below **11 mm**. This includes the IC,
-its socket and any spacers. A 74F821 in a low DIP socket can fit: the
+Keep the mounted height at or below **11 mm**, including sockets and spacers.
+A 74F821 in a low DIP socket can fit: the
 [3M example](../../datasheets/3M_DIP_Socket_4800_TS1099.source.txt) gives a
 combined height of about 10.3 mm. Measure your own parts.
 
-Set `Height_mm` on each component in the gap. Use its maximum assembled
-height, not just the IC body height. Then run:
+Set each component's `Height_mm` to its maximum assembled height. Run:
 
 ```sh
 python3 mechanical/zif/check_height.py kicad/rig/rig.kicad_pcb
 ```
 
-This needs KiCad 10's Python module. It checks the declared heights against
-the area named `DCJ11_UNDER_CPU_H11`. A value above 11 mm fails. Missing
-heights are reported as unknown. It does not measure the 3D models.
+This needs KiCad 10's Python module. It checks `Height_mm` in
+`DCJ11_UNDER_CPU_H11`; missing values and heights above 11 mm fail.
+Only Y1 has a declared height. Measure the other nine parts.
+It does not measure 3D models.
 
 ## Assembly and models
 
@@ -72,9 +70,8 @@ sockets with their contacts **open**, as the
 [3M catalog](../../datasheets/3M_Textool_Test_and_Burn-In_Socket_Catalog.source.txt)
 instructs. Keep both bodies flat against the board while soldering.
 
-The footprint has separate models for the sockets and CPU. Hide the CPU
-model in KiCad's 3D settings to see the parts underneath. Small details such
-as lever bends and contact jaws are approximate.
+Hide the CPU model in KiCad's 3D settings to see the parts underneath.
+Lever bends and contact jaws are approximate.
 
 To regenerate the footprint, models, pin map and SVG drawing:
 

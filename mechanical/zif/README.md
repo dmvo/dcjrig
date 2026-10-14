@@ -24,7 +24,7 @@ follow the square pad and pin 1 mark. Turn power off before changing CPUs.
 | Distance between socket centers | 55.88 mm |
 | Socket body | 100.6 × 33.0 mm |
 | Drill diameter | 1.4 mm |
-| Copper pad | 3.2 × 1.9 mm |
+| Copper pad | 3.2 × 2.2 mm |
 | Clear width between the socket placement outlines | 21.88 mm |
 | Maximum component height under the CPU | 11 mm |
 
@@ -36,7 +36,7 @@ The long pads leave room for hand soldering.
 The sockets used here have rectangular solder tails measuring 0.9 × 0.5 mm.
 Their diagonal is 1.03 mm. The 1.4 mm holes allow for insertion clearance
 and the [JLCPCB hole diameter tolerance](https://jlcpcb.com/capabilities/pcb-capabilities)
-of +0.13/−0.08 mm. The nominal copper ring is at least 0.25 mm wide.
+of +0.13/−0.08 mm. The nominal copper ring is at least 0.40 mm wide.
 
 Body dimensions and pin spacing come from the
 [3M socket drawing](../../datasheets/3M_Textool_264-4493_TS-0365.source.txt)

@@ -26,7 +26,7 @@ WIDTH = 33.0
 TOP = 11.9
 DRILL = 1.4  # Clearance for the measured 0.9 x 0.5 mm rectangular solder tails.
 PAD_X = 3.2  # Extra soldering land across the rows, preserving the 2.54 mm pitch.
-PAD_Y = 1.9
+PAD_Y = 2.2  # 0.4 mm nominal ring around the 1.4 mm hole.
 
 
 def sockets():

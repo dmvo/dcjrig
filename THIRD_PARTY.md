@@ -32,7 +32,7 @@ The exception covers use in circuit designs; sharing library collections has
 separate requirements. The source library is
 [kicad-symbols](https://gitlab.com/kicad/libraries/kicad-symbols).
 
-The CPU, UART and latch symbols were drawn for this project. So were the
+The CPU, UART, latch and GAL20V8A symbols were drawn for this project. So were the
 socket and crystal footprints and their 3D models. Their Python generators
 are included under `mechanical/`.
 

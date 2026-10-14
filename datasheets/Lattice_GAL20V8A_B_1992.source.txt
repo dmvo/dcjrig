@@ -1,0 +1,11 @@
+Publisher: Lattice Semiconductor.
+Document: 1992 GAL Data Book, May 1992; GAL20V8A/B chapter.
+Source: https://bitsavers.trailing-edge.com/components/latticeSemiconductor/_dataBooks/1992_Lattice_GAL_Data_Book.pdf
+Local PDF: Lattice_GAL20V8A_B_1992.pdf
+
+The local PDF contains source PDF pages 39-62, printed pages 2-25 to 2-48.
+For GAL20V8A-15LP, use the commercial A tables on pages 2-36 and 2-37.
+Simple mode and its fuse map are on pages 2-32 and 2-33.
+The Input Buffers section explains that version A has no active pull-ups.
+
+SHA256: 87e2370d9287172e2879b30dd84fdfe419491c434282779e151704bcf57da167

@@ -5,7 +5,7 @@ KICAD_CLI ?= kicad-cli
 
 .PHONY: all build check check-wiring
 
-all: check
+all: check-wiring
 
 build: odt_bridge.pld
 	mkdir -p build
@@ -14,9 +14,9 @@ build: odt_bridge.pld
 
 check: build
 	$(PYTHON) check_bridge.py --jed build/odt_bridge.jed
-	$(PYTHON) check_bridge.py --jed odt_bridge.jed
 	cmp build/odt_bridge.jed odt_bridge.jed
 
-check-wiring: check
+check-wiring: build
 	$(KICAD_CLI) sch export netlist --format kicadxml --output build/wiring.xml ../../kicad/rig/rig.kicad_sch
 	$(PYTHON) check_bridge.py --jed build/odt_bridge.jed --netlist build/wiring.xml
+	cmp build/odt_bridge.jed odt_bridge.jed

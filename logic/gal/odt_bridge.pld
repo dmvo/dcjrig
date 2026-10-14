@@ -1,14 +1,15 @@
-GAL16V8
+GAL20V8
 ODTBRDGE
 
 ; SPDX-License-Identifier: MIT
 ; Copyright (c) 2026 Dimitri Varpusvuori
-; U6: DCJ11 bus controls for the DC319A DLART and startup buffer.
+; U6: Lattice GAL20V8A-15LP, simple combinatorial mode.
+; DCJ11 bus controls for the DC319A DLART and startup buffer.
 ; Pin names starting with n describe active-low signals at the package.
 ; NOT TESTED ON REAL HARDWARE. See design.md for verification limits.
 
-AIO3 AIO2 AIO1 AIO0 BS0 BS1 nSCTL nBUF ADDR0 GND
-NC   nREAD PARK13 PARK14 nWRITE PARK16 PARK17 nSELECT nBOOT VCC
+AIO3 AIO2 AIO1 AIO0 BS0 BS1 nSCTL nBUF ADDR0 TIE10 TIE11 GND
+TIE13 TIE14 nREAD PARK16 PARK17 nWRITE PARK19 PARK20 nSELECT nBOOT TIE23 VCC
 
 ; The DLART occupies the external-I/O bank. A2:A0 select its registers.
 /nSELECT = BS1 * /BS0
@@ -25,11 +26,12 @@ NC   nREAD PARK13 PARK14 nWRITE PARK16 PARK17 nSELECT nBOOT VCC
 ; GP read (code E) selects the fixed startup word. U5 also checks nBUF.
 /nBOOT = AIO3 * AIO2 * AIO1 * /AIO0
 
-; Unconnected output pads have a defined state.
-PARK13 = GND
-PARK14 = GND
+; These four unused output pads stay LOW. Leave them unconnected on the PCB.
+; Constant zero needs no effective product terms.
 PARK16 = GND
 PARK17 = GND
+PARK19 = GND
+PARK20 = GND
 
 DESCRIPTION
 ODT bridge for the DCJ11 test rig. See design.md for the specification

@@ -9,7 +9,7 @@ These source notes tell you where to find them.
 | DC319 and 74F821 | [DEC and National documents](DC319-and-74F821-sources.txt) |
 | SN74AHCT14 | [TI Schmitt inverter](TI_SN74AHCT14.source.txt) |
 | SN74AHCT541 | [TI bus buffer](TI_SN74AHCT541.source.txt) |
-| GAL16V8 | [Lattice](Lattice_GAL16V8.source.txt) |
+| GAL20V8A-15LP | [Lattice](Lattice_GAL20V8A_B_1992.source.txt) |
 | VF154 oscillator | [Valpey-Fisher](Valpey-Fisher_VF150-series_VF154.source.txt) |
 | HC-49S crystal case | [Elecsound](Elecsound_HC49S_Quartz_Crystal_Resonator.source.txt) |
 | CPU package | [DEC dimensions](DEC_DCJ11_Mechanical_Dimensions_1987_E4.source.txt) |

@@ -10,10 +10,10 @@ starts and responds. It does not test every CPU function.
 |---|---|
 | U1 — DCJ11-AE | Processor under test |
 | U2 — DC319A DLART | Serial interface |
-| U3 — SN74AHCT14N | Reset and clock-signal inversion |
+| U3 — SN74AHCT14N | Reset, address-latch clock and late data capture |
 | U4 — 74F821SPC | Holds address and control bits during a bus cycle |
 | U5 — 74AHCT541 | Supplies the startup settings for ODT |
-| U6 — GAL16V8 | Selects the UART and controls bus transfers |
+| U6 — GAL20V8A-15LP | Selects the UART and controls bus transfers |
 | Y1 — 4 MHz HC-49S crystal | CPU clock |
 | Y2 — VF154, 614.4 kHz | UART clock |
 
@@ -76,6 +76,7 @@ The design has not yet been tested on a built board. First check the rig
 with a known-good CPU. A silent console alone is not enough to reject a CPU.
 A useful quick test includes both the ODT prompt and a response to a command.
 
-Two timing details still need checking on the hardware: startup data must
-stay valid long enough after its buffer turns off, and the CPU's data-valid
-input is held HIGH. The render also cannot confirm real component heights.
+The CPU's DV input receives an inverted /SCTL pulse for late data capture.
+The [timing notes](../logic/gal/design.md#timing-assumptions) give the
+calculated margins and their assumptions. Check the clock waveform and DV
+edge on the built board. The render cannot confirm real component heights.

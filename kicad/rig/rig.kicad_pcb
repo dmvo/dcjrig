@@ -1694,13 +1694,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP8"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "a512ca92-933f-4cb8-b614-fb951eb9d325")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{OE}"
@@ -3752,13 +3753,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP1"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "434f3d9c-9d69-4fe8-b0f2-2b3b1bffd8f1")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "CLK2"
@@ -4564,13 +4566,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP2"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "26dbcc0b-37c2-487b-a505-eefd7d948695")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{INIT}"
@@ -6105,13 +6108,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP9"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "9ce81df7-a4d6-4595-bb9e-889a78bbf34d")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{WEL}"
@@ -8289,13 +8293,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP7"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "1102ccd1-3969-42b4-a635-f91ca27e4b60")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "DV"
@@ -8891,13 +8896,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP6"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "41a0944f-256a-4cee-92e6-18764d61bd7b")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "LE"
@@ -11257,13 +11263,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP4"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "f6234924-05cd-4651-bf6a-c4d6df09e68f")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{BUFCTL}"
@@ -12524,13 +12531,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP3"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "7ae6454f-44f8-459f-bd6f-5c87daaf841f")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{SCTL}"
@@ -13230,13 +13238,14 @@
 		(tags "Through hole pin header THT 1x01 2.54mm single row")
 		(property "Reference" "TP5"
 			(at 0 -2.38 0)
-			(layer "F.SilkS")
+			(layer "B.SilkS")
 			(uuid "2acac5f5-38e8-442c-a136-949ed2f4da31")
 			(effects
 				(font
 					(size 1 1)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Value" "~{ALE}"

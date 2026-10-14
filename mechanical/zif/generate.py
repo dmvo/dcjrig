@@ -24,7 +24,7 @@ YMIN = -HALF_SPAN - 12.8       # lever end, special 64-contact dimension
 YMAX = YMIN + 100.6            # Socket body length from 3M revision E.
 WIDTH = 33.0
 TOP = 11.9
-DRILL = 1.1
+DRILL = 1.4  # Clearance for the measured 0.9 x 0.5 mm rectangular solder tails.
 PAD_X = 3.2  # Extra soldering land across the rows, preserving the 2.54 mm pitch.
 PAD_Y = 1.9
 
@@ -56,7 +56,7 @@ CONTACTS = contact_table()
 def footprint():
     lines = [f'(footprint "{NAME}"', '  (version 20241229)',
              '  (generator "dcjrig_zif_generator")', '  (layer "F.Cu")',
-             '  (descr "DCJ11 60-pin 33.02mm rows in inner rows of two Textool 264-4493 ZIF sockets. Long pads 3.2x1.9mm, drill 1.1mm. 128 holes, 60 CPU pads, 68 isolated unnumbered pads. See mechanical/zif/README.md.")',
+             f'  (descr "DCJ11 60-pin 33.02mm rows in inner rows of two Textool 264-4493 ZIF sockets. Long pads {PAD_X}x{PAD_Y}mm, drill {DRILL}mm. 128 holes, 60 CPU pads, 68 isolated unnumbered pads. See mechanical/zif/README.md.")',
              '  (tags "DEC DCJ11 DIP60 1300mil ZIF Textool 264-4493")',
              '  (attr through_hole)',
              '  (property "Reference" "REF**" (at 0 -43) (layer "F.SilkS") (effects (font (size 1.5 1.5) (thickness 0.2))))',
@@ -329,7 +329,7 @@ def svg():
     s.append('<text x="0" y="6" text-anchor="middle" font-size="2.2">FREE WIDTH 21.88 mm</text>')
     s.append('<text x="0" y="10" text-anchor="middle" font-size="2.2">HEIGHT MAX 11 mm</text>')
     s.append('</g>')
-    for i,t in enumerate(['128 plated holes, drill 1.1 mm; pads 3.2 x 1.9 mm; pitch 2.54 mm.',
+    for i,t in enumerate([f'128 plated holes, drill {DRILL} mm; pads {PAD_X} x {PAD_Y} mm; pitch 2.54 mm.',
                            '60 numbered pads = CPU pins. 68 blank pads = unused socket pins.',
                            'CPU uses contacts 2-31 of each INNER row (one empty at each end).',
                            'Left lever at top left; right lever at bottom right. Do not mirror.',

@@ -11,6 +11,7 @@
 
 # GAL build outputs
 /logic/gal/build/
+/tests/components/*/build/
 
 # KiCad per-user state, locks, automatic history and recovery files
 *.kicad_prl

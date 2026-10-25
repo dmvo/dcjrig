@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicic>
+  <database device="LOGIC">
+    <manufacturer name="Logic Ic">
+      <ic name="DC319_RESET" type="5" voltage="5V" pins="40">
+        <vector id="00"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="01"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="02"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="03"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="04"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="05"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="06"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="07"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+        <vector id="08"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="09"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="10"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="11"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="12"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="13"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="14"> 0 0 1 L L L L L L L L L L L L L L L L G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="15"> 0 0 1 L L L L L L L L L L L L L L L L G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="16"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="17"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="18"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="19"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="20"> 0 0 1 L L L L L L L L L L L L L L L L G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="21"> 0 0 1 L L L L L L L L L L L L L L L L G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="22"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="23"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 0 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="24"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="25"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="26"> 0 0 1 L L L L L L L H L L L L L L L L G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="27"> 0 0 1 L L L L L L L H L L L L L L L L G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="28"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="29"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 0 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="30"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="31"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="32"> 0 0 1 L L L L L L L L L L L L L L L L G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="33"> 0 0 1 L L L L L L L L L L L L L L L L G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="34"> 1 0 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="35"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 1 0 L L 1 0 L H 1 0 L H L L 1 1 0 V </vector>
+        <vector id="36"> 1 1 1 Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z Z G 0 1 1 0 Z Z 1 0 Z Z 1 0 Z Z Z Z 1 1 1 V </vector>
+      </ic>
+    </manufacturer>
+  </database>
+</logicic>

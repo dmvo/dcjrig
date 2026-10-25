@@ -17,6 +17,8 @@ prove that every part of the CPU works.
   Write for someone building or exploring the project.
 - Public documents describe the current design. Keep old plans, audit logs,
   rejected options and private notes in ignored local files.
+- Publish reusable test tools and selected measurements separately. Remove
+  session handoffs, personal paths and equipment serial numbers.
 - Keep the main README short. It presents this as an example of AI-assisted
   KiCad design, from an empty project to a routed board.
 - State the result first. Put detailed evidence in a local report when needed.

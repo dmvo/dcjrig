@@ -258,7 +258,7 @@ def main():
     prove_minimum(contract, PINS, equations, products, fuses)
     if args.netlist:
         check_wiring(args.netlist)
-    print('This checks steady logic levels. The logic has NOT been tested on real hardware.')
+    print('This checks steady logic levels. See tests/components for recorded hardware checks; board timing is unmeasured.')
 
 
 if __name__ == '__main__':

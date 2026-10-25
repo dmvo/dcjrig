@@ -6,5 +6,5 @@
 *.jpeg binary
 
 # Preserve exact line endings in programming files and their checksums.
-*.jed -text
-*.JED -text
+*.jed -text whitespace=cr-at-eol
+*.JED -text whitespace=cr-at-eol

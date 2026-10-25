@@ -1,7 +1,7 @@
 # ODT bridge: design and minimum logic
 
-**This logic has not been tested on hardware.** The proof covers steady
-Boolean levels. Delays, startup transients and bus timing need measurements.
+**The GAL passed static hardware checks.** The proof covers steady Boolean
+levels. Delays, startup transients and bus timing still need measurements.
 
 U6 is a Lattice GAL20V8A-15LP in simple combinatorial mode.
 The equations follow the wiring and specifications below. Names beginning

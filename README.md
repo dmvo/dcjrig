@@ -13,8 +13,11 @@ your projects.
 The rig checks DEC DCJ11-AE CPUs through their built-in ODT console.
 It uses a 4 MHz crystal, a DC319A DLART and two ZIF sockets.
 The [GAL source and programming file](logic/gal/README.md) are included.
-The board is assembled but has not been powered on. The GAL and support
-logic passed [component checks](tests/components/README.md); DC319 testing is partial.
+
+**ODT works on hardware.** CPU register writes read back correctly in the
+[first console check](docs/assembly.md). This is a quick check, not a full CPU test.
+
+![ODT writes and reads back CPU registers R0–R3](docs/images/odt-register-check.png)
 
 [Open in KiCad 10](kicad/rig/rig.kicad_pro) ·
 [Build guide](docs/build.md) ·

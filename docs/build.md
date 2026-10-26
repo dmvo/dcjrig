@@ -25,8 +25,8 @@ Layer order: front signals, 5 V, ground, back signals.
 Open `kicad/rig/rig.kicad_pro` in KiCad 10. Install KiCad's standard libraries;
 custom parts and 3D models are included.
 
-Run `bash docs/render.sh` to recreate the README render. The
-[assembly photos](assembly.md) show the real board before fitting a CPU.
+Run `bash docs/render.sh` to recreate the README render. See the
+[hardware check](assembly.md) for ODT results and assembly photos.
 
 ## Fit the processor
 
@@ -67,9 +67,9 @@ the source, programming file and Linux instructions for galette and minipro.
 
 ## Before trusting a result
 
-**The board is assembled but has not been powered on.** The GAL and support
-logic passed [component checks](../tests/components/README.md); DC319 testing
-is partial. A silent console alone is not enough to reject a CPU.
+**The assembled rig starts ODT and reads back CPU register writes.** See the
+[console check](assembly.md) and [component checks](../tests/components/README.md).
+A silent console alone is not enough to reject a CPU.
 
 For a power-only check without a CPU, remove U2–U6 with power disconnected.
 Otherwise /ALE, /SCTL and /BUFCTL leave CMOS inputs undriven. Check the 5 V

@@ -1,8 +1,8 @@
 # Component checks
 
-**The board is assembled but has not been powered on.** These are tests of
-individual chips in a T48, recorded on 25 October 2026. They do not establish
-bus timing or a working ODT console.
+These T48 tests of individual chips were recorded on 25 October 2026.
+The assembled rig has since passed an [ODT register check](../../docs/assembly.md).
+The component tests do not measure bus timing.
 
 | Chip | Coverage | Result |
 |---|---|---|
@@ -25,7 +25,7 @@ The programmer supplied slow clock steps, outside DEC's continuous
 RTCLK77 followed inverted CLK in the sampled states instead of showing
 the expected divide-by-8 output. The cause is unresolved. Check this output
 again with the normal clock; these data do not establish a chip fault.
-External serial reception and normal baud rates were not tested.
+These T48 tests did not cover external serial reception at normal baud rates.
 
 ## Recheck the saved data
 

@@ -15,7 +15,8 @@ Lattice specifications. Its source, programming file, scripts and explanation
 use the [MIT license](logic/gal/LICENSE). The
 [design notes](logic/gal/design.md) explain and prove the equations.
 
-[Static GAL hardware tests](tests/components/README.md) passed; board operation remains untested.
+[Static GAL hardware tests](tests/components/README.md) and an
+[ODT register check on the assembled rig](docs/assembly.md) passed.
 
 ## KiCad libraries
 

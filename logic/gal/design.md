@@ -1,7 +1,8 @@
 # ODT bridge: design and minimum logic
 
-**The GAL passed static hardware checks.** The proof covers steady Boolean
-levels. Delays, startup transients and bus timing still need measurements.
+**The GAL passed static hardware checks, and the rig runs ODT.** See the
+[console check](../../docs/assembly.md). The proof covers steady Boolean levels;
+delays, startup transients and bus timing still need measurements.
 
 U6 is a Lattice GAL20V8A-15LP in simple combinatorial mode.
 The equations follow the wiring and specifications below. Names beginning
@@ -125,7 +126,7 @@ The checker rejects feedback, checks both JEDEC checksums, and verifies
 the source pin order. `make check-wiring` also checks the saved schematic's
 control connections, grounded inputs and DV inverter path.
 
-These checks prove the specified Boolean behavior, not that the rig works.
+These checks prove the specified Boolean behavior. They do not measure bus timing.
 
 ## What "minimum" means
 

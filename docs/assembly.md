@@ -5,6 +5,10 @@ writes to R0–R3 read back correctly: `111111`, `000000`, `052525`, `125252`
 (octal). This checks startup, serial communication and register access.
 It does not test every CPU function or measure timing margins.
 
+On 8 November 2026, five DCJ11 CPUs passed the fuller
+[ODT test suite](../tests/odt/README.md). It checks the general registers,
+PSW, stack pointers, memory management registers, PIRQ and the DLART bus path.
+
 ![ODT writes and reads back CPU registers R0–R3](images/odt-register-check.png)
 
 The screenshot is cropped to the terminal output; its pixels are unchanged.

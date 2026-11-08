@@ -15,7 +15,9 @@ It uses a 4 MHz crystal, a DC319A DLART and two ZIF sockets.
 The [GAL source and programming file](logic/gal/README.md) are included.
 
 **ODT works on hardware.** CPU register writes read back correctly in the
-[first console check](docs/assembly.md). This is a quick check, not a full CPU test.
+[first console check](docs/assembly.md). Five DCJ11 CPUs then passed the
+[ODT test suite](tests/odt/README.md). It checks registers and the console
+bus path, not every CPU function.
 
 ![ODT writes and reads back CPU registers R0–R3](docs/images/odt-register-check.png)
 

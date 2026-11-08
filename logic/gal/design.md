@@ -1,8 +1,9 @@
 # ODT bridge: design and minimum logic
 
 **The GAL passed static hardware checks, and the rig runs ODT.** See the
-[console check](../../docs/assembly.md). The proof covers steady Boolean levels;
-delays, startup transients and bus timing still need measurements.
+[console check](../../docs/assembly.md) and the [ODT test suite](../../tests/odt/README.md).
+The proof covers steady Boolean levels; delays, startup transients
+and bus timing still need measurements.
 
 U6 is a Lattice GAL20V8A-15LP in simple combinatorial mode.
 The equations follow the wiring and specifications below. Names beginning

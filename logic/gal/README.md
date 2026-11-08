@@ -4,7 +4,8 @@ U6, a Lattice **GAL20V8A-15LP**, connects the DCJ11 bus to the DC319A DLART
 and startup buffer. The source and build files use the [MIT license](LICENSE).
 
 **Static GAL tests and fuse readback passed.** [Results and tools](../../tests/components/README.md)
-are included. The assembled rig also passed an [ODT register check](../../docs/assembly.md).
+are included. The assembled rig also passed an [ODT register check](../../docs/assembly.md)
+and the [ODT test suite](../../tests/odt/README.md), which reads and writes the DLART.
 Timing margins remain unmeasured.
 
 - [odt_bridge.pld](odt_bridge.pld) — equations and pin assignments.

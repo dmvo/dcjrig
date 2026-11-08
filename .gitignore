@@ -25,6 +25,9 @@ _autosave-*
 # Temporary autorouter exchange files
 /kicad/rig/temp-freerouting.*
 
+# ODT test results and serial logs
+/tests/odt/results/
+
 # Python caches
 __pycache__/
 *.py[cod]

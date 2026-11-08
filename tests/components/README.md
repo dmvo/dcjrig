@@ -1,7 +1,8 @@
 # Component checks
 
 These T48 tests of individual chips were recorded on 25 October 2026.
-The assembled rig has since passed an [ODT register check](../../docs/assembly.md).
+The assembled rig has since passed an [ODT register check](../../docs/assembly.md)
+and the [ODT test suite](../odt/README.md).
 The component tests do not measure bus timing.
 
 | Chip | Coverage | Result |

@@ -69,6 +69,7 @@ the source, programming file and Linux instructions for galette and minipro.
 
 **The assembled rig starts ODT and reads back CPU register writes.** See the
 [console check](assembly.md) and [component checks](../tests/components/README.md).
+Five DCJ11 CPUs passed the [ODT test suite](../tests/odt/README.md).
 A silent console alone is not enough to reject a CPU.
 
 For a power-only check without a CPU, remove U2–U6 with power disconnected.
